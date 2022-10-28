@@ -1,0 +1,22 @@
+.navbar {
+  background: #06283d;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 3rem;
+  font-size: 1.3rem;
+  align-self: stretch;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-logo {
+    font-weight: 800;
+
+    @media only screen and (max-width: 350px) {
+      font-size: 1rem;
+    }
+  }
+}

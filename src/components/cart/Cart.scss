@@ -1,0 +1,119 @@
+.cart {
+  background: #eaeaea;
+  border: 2px solid gray;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  color: rgb(80, 79, 79);
+  border-radius: 0.5rem;
+  animation: moveFromUp 0.4s ease-in;
+  width: 60%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-height: 30rem;
+  overflow-y: auto;
+  @media only screen and (max-width: 900px) {
+    width: 85%;
+    padding: 1.7rem 0.4rem;
+  }
+
+  &-close-btn {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border: none;
+    background: transparent;
+    @media only screen and (max-width: 900px) {
+      font-size: 1.5rem;
+    }
+    &:hover {
+      color: green;
+    }
+  }
+
+  &-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-heading {
+      @media only screen and (max-width: 600px) {
+        font-size: 0.95rem;
+      }
+    }
+    span {
+      font-weight: bold;
+      font-size: 1.2rem;
+      @media only screen and (max-width: 600px) {
+        font-size: 0.95rem;
+      }
+    }
+  }
+  &-actions {
+    align-self: flex-end;
+  }
+  &-end-btn {
+    border: 3px solid #256d85;
+    background: #eaeaea;
+    cursor: pointer;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    @media only screen and (max-width: 600px) {
+      font-size: 0.95rem;
+      margin-right: 0.5rem;
+    }
+
+    margin-right: 1rem;
+    color: #256d85;
+    &:hover {
+      background: #256d85;
+      color: #fff;
+    }
+  }
+  &-order-btn {
+    border: 3px solid #256d85;
+    background: #256d85;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    @media only screen and (max-width: 600px) {
+      font-size: 0.95rem;
+      margin-right: 0.5rem;
+    }
+
+    &:hover {
+      background: #eaeaea;
+      color: #256d85;
+    }
+  }
+}
+.order-heading {
+  color: rgb(64, 136, 64);
+}
+
+@keyframes moveFromUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  70% {
+    opacity: 0.6;
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

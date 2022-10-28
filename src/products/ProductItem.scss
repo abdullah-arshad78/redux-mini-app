@@ -1,0 +1,42 @@
+.product-item {
+  background: #eaeaea;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  h3 {
+    color: #425f57;
+  }
+  p {
+    color: #556252;
+  }
+  span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: rgb(79, 79, 79);
+    margin-right: 3rem;
+  }
+  .form-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 350px) {
+      flex-direction: column;
+      text-align: center;
+      span {
+        margin-bottom: 0.5rem;
+
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+    .form-error {
+      font-weight: 500;
+      color: rgb(255, 82, 82);
+      font-size: 0.95rem;
+      display: block;
+      margin-top: 0.2rem;
+    }
+  }
+}

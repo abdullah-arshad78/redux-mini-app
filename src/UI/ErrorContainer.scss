@@ -1,0 +1,14 @@
+.error-container {
+  width: 60%;
+  background-color: #eaeaea;
+  color: rgb(107, 104, 104);
+  text-align: center;
+  padding: 0.4rem;
+
+  p {
+    color: rgb(233, 96, 96);
+  }
+
+  border: 3px solid rgb(233, 96, 96);
+  border-radius: 0.5rem;
+}

@@ -10,4 +10,4 @@ In this project I used redux toolkit and react-redux tools to create a small app
 
 - Fetching products from the database when the app loads.
 
--The fetching and getting the data from database was handled by custom made action creators.
+- The fetching and getting the data from database was handled by custom made action creators.
